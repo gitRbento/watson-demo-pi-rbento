@@ -1,0 +1,12 @@
+applications:
+- path: output/webApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: watson-demo-pi-rbento
+  host: watson-demo-pi-rbento
+  disk_quota: 1024M
+  services:
+  - watson-demo-pi-rbento-personality_insights
+  - Auto-Scaling-3w
+  - availability-monitoring-auto
